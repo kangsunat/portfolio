@@ -21,7 +21,7 @@ export default function BlogCard({
       className={cn(
         "relative",
         !bigone && "flex gap-3 hover:bg-slate-900",
-        "transition-all duration-300 cursor-pointer group"
+        "group cursor-pointer transition-all duration-300",
       )}
     >
       <picture className="shrink-0">
@@ -29,21 +29,23 @@ export default function BlogCard({
           src={image}
           alt={title}
           className={cn(
-            "transition-all duration-300 rounded-lg",
-            wfull ? "w-full h-full" : "w-20 h-auto"
+            "rounded-lg transition-all duration-300",
+            wfull ? "h-full w-full" : "h-auto w-20",
           )}
         />
       </picture>
 
       <div
         className={cn(
-          bigone && "absolute bottom-5 p-3 bg-neutral-950/70",
-          "space-y-1"
+          bigone && "absolute bottom-2 bg-neutral-950/70 p-3",
+          "space-y-1",
         )}
       >
-        <p className="line-clamp-1 text-rose-500 text-lg">{title} </p>
-        <p className="font-thin text-sm">20 Okt 2022</p>
-        <p className="line-clamp-2 text-sm font-light">{description}</p>
+        <p className="line-clamp-1 text-rose-500 md:text-lg">{title} </p>
+        <p className="text-xs font-thin md:text-sm">20 Okt 2022</p>
+        <p className="line-clamp-2 text-xs font-light md:text-sm">
+          {description}
+        </p>
       </div>
     </div>
   );

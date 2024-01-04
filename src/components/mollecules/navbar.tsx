@@ -38,6 +38,7 @@ export default function Navbar() {
         variant="light"
         place="bottom-end"
         clickable
+        style={{ zIndex: 9999 }}
       >
         <div className="w-fit">
           <ul className="space-y-3">
