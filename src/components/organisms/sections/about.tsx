@@ -4,7 +4,10 @@ import SectionTitle from "@/components/atoms/section-title";
 
 export default function About() {
   return (
-    <section className="grid place-items-center gap-8 bg-black px-4 py-10 md:grid-cols-2">
+    <section
+      id="about"
+      className="grid place-items-center gap-8 bg-black px-4 py-10 md:grid-cols-2"
+    >
       <div className="space-y-10 ">
         <SectionTitle
           color="rose"

@@ -9,11 +9,11 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <header className="container z-10 flex items-center justify-between bg-inherit p-4 py-3 md:p-8">
+    <header className="container z-10 flex items-center justify-between bg-inherit p-4 py-3 md:p-8 ">
       <h2 className="text-lg font-semibold md:text-xl">Nasirin</h2>
       <ul className="hidden items-center gap-3 md:flex">
         <NavBtn href="/" label="Home" />
-        <NavBtn href="/about" label="About" />
+        <NavBtn href="/#about" label="About" />
         <NavBtn href="/portfolio" label="Portfolio" />
         <NavBtn href="/blog" label="Blog" />
         <NavBtn
