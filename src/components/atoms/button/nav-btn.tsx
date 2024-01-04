@@ -18,10 +18,9 @@ export default function NavBtn({ label, href, target, noHover }: tNavbtn) {
   return (
     <li
       className={cn(
-        "transition-all duration-500 ease-in-out active:scale-95",
-        !noHover &&
-          "hover:shadow cursor-pointer hover:shadow-rose-500 px-2 rounded-full ",
-        router == href && "shadow shadow-rose-500"
+        "text-lg transition-all duration-500 ease-in-out active:scale-95",
+        !noHover && "cursor-pointer rounded-full px-2 hover:text-rose-500 ",
+        router == href && "font-semibold text-rose-500",
       )}
     >
       <Link href={href} target={target}>

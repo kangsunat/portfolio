@@ -6,12 +6,12 @@ import "swiper/css/pagination";
 import "react-tooltip/dist/react-tooltip.css";
 
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Poppins } from "next/font/google";
 import Navbar from "@/components/mollecules/navbar";
 
-const inter = Roboto({
+const inter = Poppins({
   weight: ["700", "400", "300", "100"],
-  subsets: ["cyrillic"],
+  subsets: ["devanagari"],
 });
 
 export const metadata: Metadata = {
