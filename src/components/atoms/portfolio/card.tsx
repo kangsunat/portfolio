@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import React, { ReactNode } from "react";
 import { FaLaravel, FaReact, FaWordpress } from "react-icons/fa";
 import { SiExpress, SiPhp } from "react-icons/si";
@@ -28,7 +27,6 @@ export default function PortfolioCard({
       <Tooltip
         id={id}
         clickable
-        place="right"
         delayShow={300}
         opacity={1}
         style={{
@@ -37,8 +35,8 @@ export default function PortfolioCard({
           borderRadius: 10,
         }}
       >
-        <div className="w-[30vw] space-y-5">
-          <p className="line-clamp-3 capitalize md:text-lg">
+        <div className="w-[80vw] space-y-5 md:w-[30vw]">
+          <p className="line-clamp-3 text-sm capitalize md:text-base">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores
             tempore dolores doloremque quidem rerum quis sit facilis enim
             delectus! Omnis, tempora? Minima in nulla cumque officiis doloremque
@@ -77,12 +75,22 @@ export default function PortfolioCard({
             </li>
           </ul>
 
-          <button
-            type="button"
-            className="w-full rounded-full bg-rose-500 py-1 text-xs text-white md:text-base"
-          >
-            Detail
-          </button>
+          <div className="space-y-2">
+            <button
+              type="button"
+              className="w-full rounded-full bg-rose-500 py-2 text-xs text-white md:py-1 md:text-base"
+              onClick={() => alert("goto detail")}
+            >
+              Detail
+            </button>
+            <button
+              type="button"
+              className="w-full rounded-full bg-green-500 py-2 text-xs text-white md:py-1 md:text-base"
+              onClick={() => alert("goto order")}
+            >
+              Order
+            </button>
+          </div>
         </div>
       </Tooltip>
     </div>
