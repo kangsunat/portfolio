@@ -7,7 +7,7 @@ import { faker } from "@faker-js/faker";
 export default function Page() {
   return (
     <div className="space-y-8">
-      <div className="grid grid-cols-3 gap-3">
+      <div className="grid md:grid-cols-3 gap-3">
         <Card2
           features={[""]}
           image={faker.image.urlPicsumPhotos()}

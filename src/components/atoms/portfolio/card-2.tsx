@@ -1,5 +1,4 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
 
 type tCard2 = {
   name: string;
@@ -29,11 +28,11 @@ export default function Card2({
           />
         </picture>
       </div>
-      <div className="space-y-8 p-2">
-        <h2 className=" font-bold md:text-lg lg:text-xl">App name</h2>
+      <div className="p-2">
+        <h2 className="font-semibold">App name</h2>
 
         <div className="flex items-center justify-end">
-          <button {...props} className="text-sm md:text-base">
+          <button {...props} className="text-sm">
             Read more
           </button>
         </div>
