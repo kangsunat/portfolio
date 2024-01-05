@@ -1,1 +1,1 @@
-![sample image](sample-portfolio.jpeg)
+![sample image](./public/sample-portfolio.jpeg)
