@@ -3,10 +3,11 @@
 import Card2 from "@/components/atoms/portfolio/card-2";
 import React from "react";
 import { faker } from "@faker-js/faker";
+import Pagination from "@/components/atoms/pagination";
 
 export default function Page() {
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 rounded-lg border border-cyan-500 p-4">
       <div className="grid gap-3 md:grid-cols-3">
         <Card2
           features={[""]}
@@ -63,7 +64,7 @@ export default function Page() {
           technology={[]}
         />
       </div>
-      <div>pagination</div>
+      <Pagination />
     </div>
   );
 }

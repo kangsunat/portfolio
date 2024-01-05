@@ -8,9 +8,7 @@ export default function PortfolioLayout({ children }: { children: ReactNode }) {
       <PortfolioAsside />
 
       {/* content */}
-      <main className="flex-1 rounded-lg border border-cyan-500 p-4">
-        {children}
-      </main>
+      <main className="flex-1">{children}</main>
     </div>
   );
 }
