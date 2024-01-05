@@ -30,16 +30,12 @@ export default function Card2({
         </picture>
       </div>
       <div className="space-y-8 p-2">
-        <div>
-          <h2 className="text-xl font-bold">App name</h2>
-          <div className="flex items-center justify-between">
-            <div>Technology</div>
-            <div>screens</div>
-          </div>
-        </div>
-        <p>features</p>
+        <h2 className=" font-bold md:text-lg lg:text-xl">App name</h2>
+
         <div className="flex items-center justify-end">
-          <button {...props}>Read more</button>
+          <button {...props} className="text-sm md:text-base">
+            Read more
+          </button>
         </div>
       </div>
     </div>

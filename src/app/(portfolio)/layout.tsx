@@ -3,7 +3,7 @@ import React, { ReactNode } from "react";
 
 export default function PortfolioLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="container flex gap-3 p-8">
+    <div className="container flex flex-col gap-3 p-8 lg:flex-row">
       {/* asside */}
       <PortfolioAsside />
 
