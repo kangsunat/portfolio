@@ -10,7 +10,7 @@ export default function PortfolioAsside() {
       <div className="sticky top-10 space-y-3 rounded-lg border border-cyan-500 p-3">
         {/* md */}
         <div className="flex items-center justify-between">
-          <p>Find your app</p>
+          <p className="text-sm md:text-base">Find your app</p>
           <button className="text-sm">Reset</button>
         </div>
         <InputSearch placeholder="search" />

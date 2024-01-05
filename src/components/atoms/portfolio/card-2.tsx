@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 type tCard2 = {
@@ -5,7 +7,8 @@ type tCard2 = {
   technology: string[];
   screens: ("desktop" | "mobile" | "website")[];
   features: string[];
-  onClick: () => void;
+  onDetail: (id?: string) => void;
+  onDemo: (id?: string) => void;
   image: string;
 };
 
@@ -15,7 +18,8 @@ export default function Card2({
   features,
   screens,
   image,
-  ...props
+  onDemo,
+  onDetail,
 }: tCard2) {
   return (
     <div className="rounded-md bg-slate-500 shadow-md transition-all duration-300 hover:shadow-cyan-500 ">
@@ -28,12 +32,15 @@ export default function Card2({
           />
         </picture>
       </div>
-      <div className="p-2">
+      <div className="space-y-3 p-2">
         <h2 className="font-semibold">App name</h2>
 
-        <div className="flex items-center justify-end">
-          <button {...props} className="text-sm">
-            Read more
+        <div className="flex items-center justify-between">
+          <button onClick={() => onDemo("id product")} className="text-sm">
+            Demo
+          </button>
+          <button onClick={() => onDetail("id product")} className="text-sm">
+            Detail
           </button>
         </div>
       </div>

@@ -22,7 +22,7 @@ export default function AsideMenu({ items, title }: tAssideMenu) {
         )}
         onClick={() => setOpen(!open)}
       >
-        <p className={cn("capitalize")}>{title}</p>
+        <p className={cn("text-sm capitalize md:text-base")}>{title}</p>
         <i className={cn("transition-all duration-300", open && "rotate-90 ")}>
           <RiArrowRightSFill />
         </i>

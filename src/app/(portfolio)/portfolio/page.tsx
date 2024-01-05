@@ -7,12 +7,13 @@ import { faker } from "@faker-js/faker";
 export default function Page() {
   return (
     <div className="space-y-8">
-      <div className="grid md:grid-cols-3 gap-3">
+      <div className="grid gap-3 md:grid-cols-3">
         <Card2
           features={[""]}
           image={faker.image.urlPicsumPhotos()}
           name={faker.commerce.productName()}
-          onClick={() => {}}
+          onDetail={(id) => alert(`goto ecommerce with id: ${id}`)}
+          onDemo={(id) => alert(`goto demo with id: ${id}`)}
           screens={[]}
           technology={[]}
         />
@@ -20,7 +21,8 @@ export default function Page() {
           features={[""]}
           image={faker.image.urlPicsumPhotos()}
           name={faker.commerce.productName()}
-          onClick={() => {}}
+          onDetail={() => {}}
+          onDemo={() => {}}
           screens={[]}
           technology={[]}
         />
@@ -28,7 +30,8 @@ export default function Page() {
           features={[""]}
           image={faker.image.urlPicsumPhotos()}
           name={faker.commerce.productName()}
-          onClick={() => {}}
+          onDetail={() => {}}
+          onDemo={() => {}}
           screens={[]}
           technology={[]}
         />
@@ -36,7 +39,8 @@ export default function Page() {
           features={[""]}
           image={faker.image.urlPicsumPhotos()}
           name={faker.commerce.productName()}
-          onClick={() => {}}
+          onDetail={() => {}}
+          onDemo={() => {}}
           screens={[]}
           technology={[]}
         />
@@ -44,7 +48,8 @@ export default function Page() {
           features={[""]}
           image={faker.image.urlPicsumPhotos()}
           name={faker.commerce.productName()}
-          onClick={() => {}}
+          onDetail={() => {}}
+          onDemo={() => {}}
           screens={[]}
           technology={[]}
         />
@@ -52,7 +57,8 @@ export default function Page() {
           features={[""]}
           image={faker.image.urlPicsumPhotos()}
           name={faker.commerce.productName()}
-          onClick={() => {}}
+          onDetail={() => {}}
+          onDemo={() => {}}
           screens={[]}
           technology={[]}
         />
