@@ -1,1 +1,1 @@
-![sample image](https://picsum.photos/200)
+![sample image](sample-portfolio.jpeg)
