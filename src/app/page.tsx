@@ -1,3 +1,9 @@
 export default function Home() {
-  return <main className="space-y-10 md:space-y-20">new design</main>;
+  return (
+    <main>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vero ut
+      eos perferendis explicabo earum possimus velit impedit, repellendus quos
+      quam odit sed! Recusandae placeat ipsam maiores pariatur enim dignissimos!
+    </main>
+  );
 }
