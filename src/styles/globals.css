@@ -4,5 +4,6 @@
 
 body {
   /* @apply bg-gradient-to-b from-primary  via-rose-500 to-[#d3f3f1] text-white; */
-  @apply bg-primary text-white;
+  /* @apply bg-primary text-white; */
+  @apply bg-white
 }
