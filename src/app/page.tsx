@@ -1,8 +1,7 @@
 import AboutSection from "@/components/organisms/about-section";
 import ExperienceSection from "@/components/organisms/experience-section";
 import HeroHeader from "@/components/organisms/hero-header";
-import { Navigation, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+import ProjectSection from "@/components/organisms/project-section";
 
 export default function Home() {
   return (
@@ -10,6 +9,7 @@ export default function Home() {
       <HeroHeader />
       <AboutSection />
       <ExperienceSection />
+      <ProjectSection />
     </main>
   );
 }

@@ -16,7 +16,7 @@ export default function ExperienceSection() {
         </small>
       </div>
 
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-3 gap-3">
         <div className=" flex flex-col items-center gap-4 text-center">
           <i className="mx-auto text-4xl">
             <GiPerspectiveDiceSixFacesRandom />
@@ -32,6 +32,15 @@ export default function ExperienceSection() {
             <GiPerspectiveDiceSixFacesRandom />
           </i>
           <p className="font-semibold">Back-end Development</p>
+          <small>
+            Ahmad also has experience with PHP, MySQL, and WordPress.
+          </small>
+        </div>
+        <div className=" flex flex-col items-center gap-4 text-center">
+          <i className="mx-auto text-4xl">
+            <GiPerspectiveDiceSixFacesRandom />
+          </i>
+          <p className="font-semibold">Mobile Development (comming soon)</p>
           <small>
             Ahmad also has experience with PHP, MySQL, and WordPress.
           </small>
