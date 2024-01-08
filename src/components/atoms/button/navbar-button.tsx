@@ -10,18 +10,13 @@ interface NavbarMenu
     ButtonHTMLAttributes<HTMLButtonElement>,
     HTMLButtonElement
   > {
-  endIcon?: ReactNode;
+  active?: boolean;
 }
 
-export default function NavbarMenu({
-  endIcon,
-  children,
-  ...props
-}: NavbarMenu) {
+export default function NavbarMenu({ active, children, ...props }: NavbarMenu) {
   return (
-    <button className={cn(endIcon && "flex items-center gap-2")} {...props}>
+    <button {...props} className={cn(active && "font-bold", props.className)}>
       {children}
-      {endIcon}
     </button>
   );
 }
