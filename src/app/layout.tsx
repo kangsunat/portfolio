@@ -8,6 +8,7 @@ import "react-tooltip/dist/react-tooltip.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import Navbar from "@/components/organisms/navbar";
+import Footer from "@/components/organisms/footer";
 
 const inter = Poppins({
   weight: ["700", "400", "300", "100"],
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
