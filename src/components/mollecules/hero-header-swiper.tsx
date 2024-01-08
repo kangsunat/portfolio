@@ -32,7 +32,7 @@ export default function HeroHeaderSwiper({ slide }: HeroHeaderSwiper) {
                 <img
                   src={v.image}
                   alt={v.name}
-                  className="aspect-video w-[550px] object-cover "
+                  className="aspect-video w-full object-cover "
                 />
               </picture>
             </SwiperSlide>

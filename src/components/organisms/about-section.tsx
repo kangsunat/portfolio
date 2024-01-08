@@ -4,7 +4,7 @@ import { fakerID_ID as faker } from "@faker-js/faker";
 
 export default function AboutSection() {
   return (
-    <section className="container grid grid-cols-2 place-items-center bg-slate-200 p-8">
+    <section className="container grid grid-cols-2 place-items-center px-8 py-10">
       <div className="flex flex-col justify-between gap-8">
         <div className="space-y-4">
           <small className="font-medium">About</small>
@@ -21,7 +21,7 @@ export default function AboutSection() {
         </div>
         <div className="grid grid-cols-2 gap-2">
           <div>
-            <div className="flex items-center gap-3">
+            <div className="mb-3 flex items-center gap-3">
               <picture>
                 <img
                   src="https://picsum.photos/200"
@@ -34,7 +34,7 @@ export default function AboutSection() {
             <small>{faker.lorem.lines()}</small>
           </div>
           <div>
-            <div className="flex items-center gap-3">
+            <div className="mb-3 flex items-center gap-3">
               <picture>
                 <img
                   src="https://picsum.photos/200"
