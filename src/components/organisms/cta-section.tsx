@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CTASection() {
   return (
-    <section className="grid grid-cols-2 place-items-center gap-3 px-8 py-10">
+    <section className="grid grid-cols-2 place-items-center gap-3 px-8 py-20">
       <h4 className="text-4xl font-bold">Get in touch with Ahmad</h4>
       <div className="space-y-8">
         <p>
