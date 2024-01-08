@@ -4,11 +4,11 @@ import { fakerID_ID as faker } from "@faker-js/faker";
 
 export default function AboutSection() {
   return (
-    <section className="container grid grid-cols-2 place-items-center px-8 py-10">
+    <section className="container grid grid-cols-1 place-items-center gap-4 px-8 py-10 lg:grid-cols-2">
       <div className="flex flex-col justify-between gap-8">
         <div className="space-y-4">
           <small className="font-medium text-[#bc6c25]">About</small>
-          <p className=" pb-4 text-4xl font-semibold text-[#283618]">
+          <p className=" pb-4 text-2xl font-semibold text-[#283618] lg:text-4xl">
             Transforming Ideas into Beautiful Websites
           </p>
           <small className="text-[#606c38]">
@@ -72,7 +72,7 @@ export default function AboutSection() {
           <img
             src={faker.image.avatar()}
             alt="about image"
-            className="aspect-square h-[450px] rounded-lg "
+            className="aspect-square h-[250px] rounded-lg lg:h-[450px] "
           />
         </picture>
       </div>

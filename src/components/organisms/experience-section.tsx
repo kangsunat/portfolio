@@ -8,7 +8,7 @@ export default function ExperienceSection() {
       {/* title */}
       <div className="flex flex-col items-center justify-center gap-3 text-center">
         <small className="font-medium text-[#bc6c25]">Experienced</small>
-        <p className="text-4xl font-semibold text-[#283618]">
+        <p className="text-2xl font-semibold text-[#283618] lg:text-4xl">
           Skills and Technologies
         </p>
         <small className="text-[#606c38]">
@@ -18,7 +18,7 @@ export default function ExperienceSection() {
         </small>
       </div>
 
-      <div className="grid grid-cols-3 gap-3">
+      <div className="grid grid-cols-1 gap-3 md:grid-cols-3">
         <div className=" flex flex-col items-center gap-4 text-center">
           <i className="mx-auto text-4xl">
             <GiPerspectiveDiceSixFacesRandom />

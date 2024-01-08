@@ -7,7 +7,7 @@ export default function BlogSection() {
       {/* title */}
       <div className="flex flex-col gap-3">
         <small className="font-medium text-[#bc6c25]">Latest</small>
-        <p className="text-4xl font-semibold text-[#283618]">
+        <p className="text-2xl font-semibold text-[#283618] lg:text-4xl">
           Stay Updated with Our Blogs
         </p>
         <small className="text-[#606c38]">
@@ -15,13 +15,13 @@ export default function BlogSection() {
         </small>
       </div>
 
-      <div className="grid grid-cols-2 gap-8">
-        <div className="flex gap-4">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+        <div className="flex flex-row gap-4">
           <picture>
             <img
               src={faker.image.urlLoremFlickr({ category: "article" })}
               alt="asdf"
-              className="aspect-square w-40 shrink-0 rounded-lg bg-cover"
+              className="aspect-square w-32 rounded-lg bg-cover object-cover md:w-40 md:shrink-0"
             />
           </picture>
           <div className="flex flex-1 flex-col gap-3">
@@ -49,12 +49,12 @@ export default function BlogSection() {
             </div>
           </div>
         </div>
-        <div className="flex gap-4">
+        <div className="flex flex-row gap-4">
           <picture>
             <img
               src={faker.image.urlLoremFlickr({ category: "article" })}
               alt="asdf"
-              className="aspect-square w-40 shrink-0 rounded-lg bg-cover"
+              className="aspect-square w-32 rounded-lg bg-cover object-cover md:w-40 md:shrink-0"
             />
           </picture>
           <div className="flex flex-1 flex-col gap-3">
@@ -82,12 +82,12 @@ export default function BlogSection() {
             </div>
           </div>
         </div>
-        <div className="flex gap-4">
+        <div className="flex flex-row gap-4">
           <picture>
             <img
               src={faker.image.urlLoremFlickr({ category: "article" })}
               alt="asdf"
-              className="aspect-square w-40 shrink-0 rounded-lg bg-cover"
+              className="aspect-square w-32 rounded-lg bg-cover object-cover md:w-40 md:shrink-0"
             />
           </picture>
           <div className="flex flex-1 flex-col gap-3">
@@ -115,12 +115,12 @@ export default function BlogSection() {
             </div>
           </div>
         </div>
-        <div className="flex gap-4">
+        <div className="flex flex-row gap-4">
           <picture>
             <img
               src={faker.image.urlLoremFlickr({ category: "article" })}
               alt="asdf"
-              className="aspect-square w-40 shrink-0 rounded-lg bg-cover"
+              className="aspect-square w-32 rounded-lg bg-cover object-cover md:w-40 md:shrink-0"
             />
           </picture>
           <div className="flex flex-1 flex-col gap-3">
@@ -151,8 +151,8 @@ export default function BlogSection() {
       </div>
 
       <div className="flex justify-end">
-        <button className="border border-neutral-500 px-2 py-1">
-          Read All
+        <button className="rounded-md border border-[#bc6c25] px-2 py-1 text-[#bc6c25] hover:bg-[#bc6c25] hover:text-[#fefae0]">
+          Read more
         </button>
       </div>
     </section>

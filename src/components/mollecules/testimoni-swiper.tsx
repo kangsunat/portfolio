@@ -22,20 +22,23 @@ export default function TestimoniSwiper({ testimonies }: TestimoniSwiper) {
   return (
     <div className="relative">
       <button
-        className="absolute left-0 top-1/2 rounded-full border border-[#bc6c25] p-2 text-[#bc6c25]"
+        className="absolute left-0 top-1/2 hidden rounded-full border border-[#bc6c25] p-2 text-[#bc6c25] md:block"
         onClick={() => core?.slidePrev()}
       >
         <i className="text-xl">
           <AiOutlineArrowLeft />
         </i>
       </button>
-      <div className="space-y-10 px-12">
+      <div className="space-y-10 md:px-12">
         <Swiper
           onSwiper={setCore}
           onSlideChange={(s) => setSlideIndex(s.realIndex)}
           loop={true}
           spaceBetween={30}
-          slidesPerView={2}
+          slidesPerView={1}
+          breakpoints={{
+            768: { slidesPerView: 2, spaceBetween: 20 },
+          }}
         >
           {testimonies.map((v, i) => (
             <SwiperSlide
@@ -80,7 +83,7 @@ export default function TestimoniSwiper({ testimonies }: TestimoniSwiper) {
         </div>
       </div>
       <button
-        className="absolute right-0 top-1/2 rounded-full border border-[#bc6c25] p-2 text-[#bc6c25]"
+        className="absolute right-0 top-1/2 hidden rounded-full border border-[#bc6c25] p-2 text-[#bc6c25] md:block"
         onClick={() => core?.slideNext()}
       >
         <i>

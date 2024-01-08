@@ -7,7 +7,9 @@ export default function TestimoniSection() {
     <section className="space-y-10 px-8 py-10">
       {/* title */}
       <div className="flex flex-col items-center justify-center gap-3">
-        <p className="text-4xl font-semibold text-[#283618]">Client Reviews</p>
+        <p className="text-2xl font-semibold text-[#283618] lg:text-4xl">
+          Client Reviews
+        </p>
         <small className="text-[#606c38]">
           Hear what our clients have to say about me
         </small>

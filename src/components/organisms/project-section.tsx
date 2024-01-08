@@ -9,13 +9,13 @@ export default function ProjectSection() {
       {/* title */}
       <div className="flex flex-col items-center justify-center gap-3 text-center">
         <small className="font-medium text-[#bc6c25]">Portfolio</small>
-        <p className="text-4xl font-semibold text-[#283618]">
+        <p className="text-2xl font-semibold text-[#283618] lg:text-4xl">
           Featured Projects
         </p>
         <small className="text-[#606c38]">Explore our portfolio of work</small>
       </div>
 
-      <div className="grid grid-cols-3 gap-3">
+      <div className="grid grid-cols-1 gap-3 md:grid-cols-3">
         <div className="space-y-4">
           <picture>
             <img

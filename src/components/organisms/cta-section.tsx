@@ -2,11 +2,11 @@ import React from "react";
 
 export default function CTASection() {
   return (
-    <section className="grid grid-cols-2 place-items-center gap-3 px-8 py-20">
-      <h4 className="text-4xl font-bold text-[#283618]">
+    <section className="grid grid-cols-1 place-items-center gap-3 px-8 py-20 lg:grid-cols-2">
+      <h4 className="text-2xl font-bold text-[#283618] lg:text-4xl">
         Get in touch with Ahmad
       </h4>
-      <div className="space-y-8 text-[#606c38]">
+      <div className="space-y-8 text-center text-[#606c38] lg:text-left">
         <p>
           If you&apos;re looking to hire a professional web developer or
           collaborate on a project, Ahmad is the right person for the job. With
