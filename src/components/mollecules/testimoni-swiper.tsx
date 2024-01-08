@@ -22,7 +22,7 @@ export default function TestimoniSwiper({ testimonies }: TestimoniSwiper) {
   return (
     <div className="relative">
       <button
-        className="absolute left-0 top-1/2 rounded-full border border-neutral-500 p-2"
+        className="absolute left-0 top-1/2 rounded-full border border-[#bc6c25] p-2 text-[#bc6c25]"
         onClick={() => core?.slidePrev()}
       >
         <i className="text-xl">
@@ -49,7 +49,7 @@ export default function TestimoniSwiper({ testimonies }: TestimoniSwiper) {
                   className="aspect-auto max-w-[90px]"
                 />
               </picture>
-              <p className="text-center text-sm font-semibold">
+              <p className="text-center text-sm font-semibold text-[#606c38]">
                 &quot; {v.message} &quot;
               </p>
               <picture>
@@ -59,7 +59,7 @@ export default function TestimoniSwiper({ testimonies }: TestimoniSwiper) {
                   className="aspect-square w-10 rounded-full"
                 />
               </picture>
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center text-[#283618]">
                 <small className="font-medium">{v.name}</small>
 
                 <small>{v.jobPosition}</small>
@@ -72,7 +72,7 @@ export default function TestimoniSwiper({ testimonies }: TestimoniSwiper) {
             <div
               className={cn(
                 "rounded-full p-[4px]",
-                i == slideIndex ? "bg-black" : "bg-neutral-500",
+                i == slideIndex ? "bg-[#bc6c25]" : "bg-[#dda15e]",
               )}
               key={i}
             />
@@ -80,7 +80,7 @@ export default function TestimoniSwiper({ testimonies }: TestimoniSwiper) {
         </div>
       </div>
       <button
-        className="absolute right-0 top-1/2 rounded-full border border-neutral-500 p-2"
+        className="absolute right-0 top-1/2 rounded-full border border-[#bc6c25] p-2 text-[#bc6c25]"
         onClick={() => core?.slideNext()}
       >
         <i>

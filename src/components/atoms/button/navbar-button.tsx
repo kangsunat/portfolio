@@ -15,7 +15,10 @@ interface NavbarMenu
 
 export default function NavbarMenu({ active, children, ...props }: NavbarMenu) {
   return (
-    <button {...props} className={cn(active && "font-bold", props.className)}>
+    <button
+      {...props}
+      className={cn(active && "font-bold text-[#dda15e]", props.className)}
+    >
       {children}
     </button>
   );

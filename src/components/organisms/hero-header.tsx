@@ -6,17 +6,17 @@ export default function HeroHeader() {
   return (
     <section className="grid grid-cols-2 place-items-center ">
       <div className="flex flex-col gap-3 p-8">
-        <h2 className="text-4xl font-bold">
+        <h2 className="text-4xl font-bold text-[#283618]">
           Experienced Web Developer Creating Stunning Websites
         </h2>
-        <small>
+        <small className="text-[#606c38]">
           Welcome to my portfolio website. I specialize in designing and
           developing visually appealing and user-friendly websites.
         </small>
-        <div className="flex items-center gap-3">
+        {/* <div className="flex items-center gap-3">
           <button className="bg-neutral-950 px-4 py-1 text-white">btn 1</button>
           <button className="border border-neutral-500 px-4 py-1">btn 2</button>
-        </div>
+        </div> */}
       </div>
       <HeroHeaderSwiper
         slide={[

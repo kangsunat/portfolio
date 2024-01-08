@@ -16,19 +16,19 @@ export default function Footer() {
             className="aspect-video max-h-14"
           />
         </picture>
-        <p>
+        <p className="text-[#606c38]">
           Stay up to date on the latest features and releases by joining our
           newsletter.
         </p>
         <form action="#" className="flex items-center gap-3">
           <input
-            type="text"
-            className="w-[50%]"
+            type="email"
+            className="w-[50%] rounded-lg border border-[#dda15e] bg-transparent text-[#bc6c25] placeholder:text-[#dda15e] focus:border-[#bc6c25] focus:ring-0"
             placeholder="Enter email address"
           />
-          <button>Subscribe</button>
+          <button className="font-semibold text-[#283618]">Subscribe</button>
         </form>
-        <small>
+        <small className="text-[#606c38]">
           By subscribing, you agree to our Privacy Policy and consent to receive
           updates from our company.
         </small>
@@ -41,8 +41,8 @@ export default function Footer() {
           className="aspect-video flex-1"
         ></iframe>
         <div className="w-fit shrink-0 space-y-7">
-          <p className="font-medium">Contact :</p>
-          <ul className="space-y-3">
+          <p className="font-semibold text-[#283618]">Contact :</p>
+          <ul className="space-y-3 text-[#283618]">
             <li>
               <Link href={"#"} className="flex items-center gap-2">
                 <i>
