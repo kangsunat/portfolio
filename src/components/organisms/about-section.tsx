@@ -8,7 +8,7 @@ export default function AboutSection() {
       <div className="flex flex-col justify-between gap-8">
         <div className="space-y-4">
           <small className="font-medium">About</small>
-          <p className=" pb-4 text-2xl font-semibold">
+          <p className=" pb-4 text-4xl font-semibold">
             Transforming Ideas into Beautiful Websites
           </p>
           <small>

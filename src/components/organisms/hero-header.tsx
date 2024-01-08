@@ -6,7 +6,7 @@ export default function HeroHeader() {
   return (
     <section className="grid grid-cols-2 place-items-center ">
       <div className="flex flex-col gap-3 p-8">
-        <h2 className="text-xl font-bold">
+        <h2 className="text-4xl font-bold">
           Experienced Web Developer Creating Stunning Websites
         </h2>
         <small>

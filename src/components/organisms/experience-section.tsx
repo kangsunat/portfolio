@@ -6,9 +6,9 @@ export default function ExperienceSection() {
   return (
     <section className="space-y-10 p-8 py-20">
       {/* title */}
-      <div className="space-y-3 text-center">
+      <div className="flex flex-col items-center justify-center gap-3 text-center">
         <small className="font-medium">Experienced</small>
-        <p className="text-2xl font-semibold">Skills and Technologies</p>
+        <p className="text-4xl font-semibold">Skills and Technologies</p>
         <small>
           Ahmad is proficient in a wide range of skills and technologies,
           allowing him to create <br /> professional and innovative web
