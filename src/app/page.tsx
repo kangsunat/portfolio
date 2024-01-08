@@ -1,5 +1,6 @@
 import AboutSection from "@/components/organisms/about-section";
 import BlogSection from "@/components/organisms/blog-section";
+import CTASection from "@/components/organisms/cta-section";
 import ExperienceSection from "@/components/organisms/experience-section";
 import HeroHeader from "@/components/organisms/hero-header";
 import ProjectSection from "@/components/organisms/project-section";
@@ -14,6 +15,7 @@ export default function Home() {
       <ProjectSection />
       <BlogSection />
       <TestimoniSection />
+      <CTASection />
     </main>
   );
 }
