@@ -27,4 +27,4 @@
 
 Happy coding! 👨‍💻✨
 
-![sample image](./public/sample-portfolio.jpeg)
+![sample image](./public/portfolio-v2.jpeg)
