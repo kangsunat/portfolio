@@ -19,7 +19,7 @@ export default function HeroHeaderSwiper({ slide }: HeroHeaderSwiper) {
   const [slideIndex, setSlideIndex] = useState<number>(0);
 
   return (
-    <div className="flex h-full w-full select-none flex-col justify-between overflow-hidden bg-[#fefae0]">
+    <div className="flex h-full w-full select-none flex-col justify-between overflow-hidden bg-[#fefae0] px-8 lg:p-0">
       <div>
         <Swiper
           onSwiper={setCore}

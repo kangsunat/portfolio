@@ -7,7 +7,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="container grid grid-cols-2 gap-3 px-8 py-10">
+    <footer className="container grid grid-cols-1 gap-6 px-8 py-10 lg:grid-cols-2 lg:gap-3">
       <div className="space-y-8">
         <picture>
           <img
@@ -33,16 +33,16 @@ export default function Footer() {
           updates from our company.
         </small>
       </div>
-      <div className="flex gap-3">
+      <div className="flex flex-col-reverse flex-wrap gap-3 lg:flex-row lg:flex-nowrap">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126715.84304936987!2d110.33466436241527!3d-7.024552228100685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b4d3f0d024d%3A0x1e0432b9da5cb9f2!2sSemarang%2C%20Semarang%20City%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1704705232076!5m2!1sen!2sid"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          className="aspect-video flex-1"
+          className="aspect-video w-full lg:flex-1"
         ></iframe>
-        <div className="w-fit shrink-0 space-y-7">
+        <div className="w-fit space-y-7 lg:shrink-0">
           <p className="font-semibold text-[#283618]">Contact :</p>
-          <ul className="space-y-3 text-[#283618]">
+          <ul className="space-y-3 break-words ">
             <li>
               <Link href={"#"} className="flex items-center gap-2">
                 <i>
@@ -60,11 +60,14 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href={"#"} className="flex items-center gap-2">
+              <Link href={"#"} className="flex gap-2">
                 <i>
                   <FaLocationDot />
                 </i>
-                <p className="text-sm">Kota Semarang, Indonesia</p>
+                <p className="text-sm">
+                  Kota Semarang
+                  <br className="hidden lg:block" /> Indonesia
+                </p>
               </Link>
             </li>
           </ul>
