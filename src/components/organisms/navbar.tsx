@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     <header className="relative px-8 py-4">
-      <div className="gap- container flex items-center justify-between">
+      <div className="container flex items-center justify-between">
         <h2 className="text-coklat-1 text-2xl font-bold">Logo v2</h2>
         <button className="text-2xl md:hidden" onClick={() => setOpen(!open)}>
           <i>
