@@ -17,7 +17,7 @@ export default function NavbarMenu({ active, children, ...props }: NavbarMenu) {
   return (
     <button
       {...props}
-      className={cn(active && "font-bold text-[#dda15e]", props.className)}
+      className={cn(active && "text-coklat-2 font-bold", props.className)}
     >
       {children}
     </button>

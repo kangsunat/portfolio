@@ -8,11 +8,11 @@ export default function ProjectSection() {
     <div className="space-y-10 px-8 py-10">
       {/* title */}
       <div className="flex flex-col items-center justify-center gap-3 text-center">
-        <small className="font-medium text-[#bc6c25]">Portfolio</small>
-        <p className="text-2xl font-semibold text-[#283618] lg:text-4xl">
+        <small className="text-coklat-1 font-medium">Portfolio</small>
+        <p className="text-army-1 text-2xl font-semibold lg:text-4xl">
           Featured Projects
         </p>
-        <small className="text-[#606c38]">Explore our portfolio of work</small>
+        <small className="text-army-2">Explore our portfolio of work</small>
       </div>
 
       <div className="grid grid-cols-1 gap-3 md:grid-cols-3">
@@ -25,14 +25,14 @@ export default function ProjectSection() {
             />
           </picture>
           <div className="flex flex-col gap-3">
-            <p className="font-semibold text-[#283618]">
+            <p className="text-army-1 font-semibold">
               {faker.commerce.productName()}
             </p>
-            <small className="text-[#606c38]">
+            <small className="text-army-2">
               {faker.commerce.productDescription()}
             </small>
             <small>
-              <ul className="flex flex-wrap items-center gap-2 text-[#606c38]">
+              <ul className="text-army-2 flex flex-wrap items-center gap-2">
                 <li>{faker.lorem.word()}</li>
                 <li>{faker.lorem.word()}</li>
                 <li>{faker.lorem.word()}</li>
@@ -41,7 +41,7 @@ export default function ProjectSection() {
             </small>
             <Link
               href={"#"}
-              className="flex items-center gap-2 text-[#dda15e] transition-all duration-300 hover:text-[#bc6c25]"
+              className="text-coklat-2 hover:text-coklat-1 flex items-center gap-2 transition-all duration-300"
             >
               <p className="text-sm font-light">View project</p>
               <i>
@@ -59,14 +59,14 @@ export default function ProjectSection() {
             />
           </picture>
           <div className="flex flex-col gap-3">
-            <p className="font-semibold text-[#283618]">
+            <p className="text-army-1 font-semibold">
               {faker.commerce.productName()}
             </p>
-            <small className="line-clamp-3 text-[#606c38]">
+            <small className="text-army-2 line-clamp-3">
               {faker.commerce.productDescription()}
             </small>
             <small>
-              <ul className="flex flex-wrap items-center gap-2 text-[#606c38]">
+              <ul className="text-army-2 flex flex-wrap items-center gap-2">
                 <li>{faker.lorem.word()}</li>
                 <li>{faker.lorem.word()}</li>
                 <li>{faker.lorem.word()}</li>
@@ -75,7 +75,7 @@ export default function ProjectSection() {
             </small>
             <Link
               href={"#"}
-              className="flex items-center gap-2 text-[#dda15e] transition-all duration-300 hover:text-[#bc6c25]"
+              className="text-coklat-2 hover:text-coklat-1 flex items-center gap-2 transition-all duration-300"
             >
               <p className="text-sm font-light">View project</p>
               <i>
@@ -93,14 +93,14 @@ export default function ProjectSection() {
             />
           </picture>
           <div className="flex flex-col gap-3">
-            <p className="font-semibold text-[#283618]">
+            <p className="text-army-1 font-semibold">
               {faker.commerce.productName()}
             </p>
-            <small className="text-[#606c38]">
+            <small className="text-army-2">
               {faker.commerce.productDescription()}
             </small>
             <small>
-              <ul className="flex flex-wrap items-center gap-2 text-[#606c38]">
+              <ul className="text-army-2 flex flex-wrap items-center gap-2">
                 <li>{faker.lorem.word()}</li>
                 <li>{faker.lorem.word()}</li>
                 <li>{faker.lorem.word()}</li>
@@ -109,7 +109,7 @@ export default function ProjectSection() {
             </small>
             <Link
               href={"#"}
-              className="flex items-center gap-2 text-[#dda15e] transition-all duration-300 hover:text-[#bc6c25]"
+              className="text-coklat-2 hover:text-coklat-1 flex items-center gap-2 transition-all duration-300"
             >
               <p className="text-sm font-light">View project</p>
               <i>
@@ -121,7 +121,7 @@ export default function ProjectSection() {
       </div>
 
       <div className="flex justify-center">
-        <button className="rounded-lg border border-[#bc6c25] px-3 py-1 text-[#bc6c25] transition-all duration-300 hover:bg-[#bc6c25] hover:text-[#fefae0]">
+        <button className="hover:bg-coklat-1 text-coklat-1 rounded-lg border border-[#bc6c25] px-3 py-1 transition-all duration-300 hover:text-primary">
           View All
         </button>
       </div>

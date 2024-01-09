@@ -6,11 +6,11 @@ export default function BlogSection() {
     <section className="space-y-10 px-8 py-10">
       {/* title */}
       <div className="flex flex-col gap-3">
-        <small className="font-medium text-[#bc6c25]">Latest</small>
-        <p className="text-2xl font-semibold text-[#283618] lg:text-4xl">
+        <small className="text-coklat-1 font-medium">Latest</small>
+        <p className="text-army-1 text-2xl font-semibold lg:text-4xl">
           Stay Updated with Our Blogs
         </p>
-        <small className="text-[#606c38]">
+        <small className="text-army-2">
           Read our latest blog entries to learn more about web development.
         </small>
       </div>
@@ -25,16 +25,14 @@ export default function BlogSection() {
             />
           </picture>
           <div className="flex flex-1 flex-col gap-3">
-            <small className="font-medium text-[#bc6c25]">
+            <small className="text-coklat-1 font-medium">
               {faker.helpers.arrayElement(["Web", "Design", "Mobile", "Other"])}
             </small>
-            <p className="font-semibold text-[#283618]">
-              {faker.lorem.words()}
-            </p>
-            <small className="line-clamp-2 text-[#606c38]">
+            <p className="text-army-1 font-semibold">{faker.lorem.words()}</p>
+            <small className="text-army-2 line-clamp-2">
               {faker.lorem.lines()}
             </small>
-            <div className="flex items-center gap-3 text-[#283618]">
+            <div className="text-army-1 flex items-center gap-3">
               <picture>
                 <img
                   src={faker.image.avatar()}
@@ -58,16 +56,14 @@ export default function BlogSection() {
             />
           </picture>
           <div className="flex flex-1 flex-col gap-3">
-            <small className="font-medium text-[#bc6c25]">
+            <small className="text-coklat-1 font-medium">
               {faker.helpers.arrayElement(["Web", "Design", "Mobile", "Other"])}
             </small>
-            <p className="font-semibold text-[#283618]">
-              {faker.lorem.words()}
-            </p>
-            <small className="line-clamp-2 text-[#606c38]">
+            <p className="text-army-1 font-semibold">{faker.lorem.words()}</p>
+            <small className="text-army-2 line-clamp-2">
               {faker.lorem.lines()}
             </small>
-            <div className="flex items-center gap-3 text-[#283618]">
+            <div className="text-army-1 flex items-center gap-3">
               <picture>
                 <img
                   src={faker.image.avatar()}
@@ -91,16 +87,14 @@ export default function BlogSection() {
             />
           </picture>
           <div className="flex flex-1 flex-col gap-3">
-            <small className="font-medium text-[#bc6c25]">
+            <small className="text-coklat-1 font-medium">
               {faker.helpers.arrayElement(["Web", "Design", "Mobile", "Other"])}
             </small>
-            <p className="font-semibold text-[#283618]">
-              {faker.lorem.words()}
-            </p>
-            <small className="line-clamp-2 text-[#606c38]">
+            <p className="text-army-1 font-semibold">{faker.lorem.words()}</p>
+            <small className="text-army-2 line-clamp-2">
               {faker.lorem.lines()}
             </small>
-            <div className="flex items-center gap-3 text-[#283618]">
+            <div className="text-army-1 flex items-center gap-3">
               <picture>
                 <img
                   src={faker.image.avatar()}
@@ -124,16 +118,14 @@ export default function BlogSection() {
             />
           </picture>
           <div className="flex flex-1 flex-col gap-3">
-            <small className="font-medium text-[#bc6c25]">
+            <small className="text-coklat-1 font-medium">
               {faker.helpers.arrayElement(["Web", "Design", "Mobile", "Other"])}
             </small>
-            <p className="font-semibold text-[#283618]">
-              {faker.lorem.words()}
-            </p>
-            <small className="line-clamp-2 text-[#606c38]">
+            <p className="text-army-1 font-semibold">{faker.lorem.words()}</p>
+            <small className="text-army-2 line-clamp-2">
               {faker.lorem.lines()}
             </small>
-            <div className="flex items-center gap-3 text-[#283618]">
+            <div className="text-army-1 flex items-center gap-3">
               <picture>
                 <img
                   src={faker.image.avatar()}
@@ -151,7 +143,7 @@ export default function BlogSection() {
       </div>
 
       <div className="flex justify-end">
-        <button className="rounded-md border border-[#bc6c25] px-2 py-1 text-[#bc6c25] hover:bg-[#bc6c25] hover:text-[#fefae0]">
+        <button className="hover:bg-coklat-1 text-coklat-1 rounded-md border border-[#bc6c25] px-2 py-1 hover:text-primary">
           Read more
         </button>
       </div>

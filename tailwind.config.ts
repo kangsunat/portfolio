@@ -17,7 +17,15 @@ const config: Config = {
         center: true,
       },
       colors: {
-        primary: "#001F3F",
+        primary: "#fefae0",
+        coklat: {
+          1: "#bc6c25",
+          2: "#dda15e",
+        },
+        army: {
+          1: "#283618",
+          2: "#606c38",
+        },
       },
     },
   },

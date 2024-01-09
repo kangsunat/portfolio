@@ -22,7 +22,7 @@ export default function TestimoniSwiper({ testimonies }: TestimoniSwiper) {
   return (
     <div className="relative">
       <button
-        className="absolute left-0 top-1/2 hidden rounded-full border border-[#bc6c25] p-2 text-[#bc6c25] md:block"
+        className="text-coklat-1 absolute left-0 top-1/2 hidden rounded-full border border-[#bc6c25] p-2 md:block"
         onClick={() => core?.slidePrev()}
       >
         <i className="text-xl">
@@ -52,7 +52,7 @@ export default function TestimoniSwiper({ testimonies }: TestimoniSwiper) {
                   className="aspect-auto max-w-[90px]"
                 />
               </picture>
-              <p className="text-center text-sm font-semibold text-[#606c38]">
+              <p className="text-army-2 text-center text-sm font-semibold">
                 &quot; {v.message} &quot;
               </p>
               <picture>
@@ -62,7 +62,7 @@ export default function TestimoniSwiper({ testimonies }: TestimoniSwiper) {
                   className="aspect-square w-10 rounded-full"
                 />
               </picture>
-              <div className="flex flex-col items-center text-[#283618]">
+              <div className="text-army-1 flex flex-col items-center">
                 <small className="font-medium">{v.name}</small>
 
                 <small>{v.jobPosition}</small>
@@ -75,7 +75,7 @@ export default function TestimoniSwiper({ testimonies }: TestimoniSwiper) {
             <div
               className={cn(
                 "rounded-full p-[4px]",
-                i == slideIndex ? "bg-[#bc6c25]" : "bg-[#dda15e]",
+                i == slideIndex ? "bg-coklat-1" : "bg-coklat-2",
               )}
               key={i}
             />
@@ -83,7 +83,7 @@ export default function TestimoniSwiper({ testimonies }: TestimoniSwiper) {
         </div>
       </div>
       <button
-        className="absolute right-0 top-1/2 hidden rounded-full border border-[#bc6c25] p-2 text-[#bc6c25] md:block"
+        className="text-coklat-1 absolute right-0 top-1/2 hidden rounded-full border border-[#bc6c25] p-2 md:block"
         onClick={() => core?.slideNext()}
       >
         <i>
