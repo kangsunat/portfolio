@@ -15,8 +15,8 @@ export default function Navbar() {
   const container = useContainer();
 
   return (
-    <header className="relative px-8 py-4">
-      <div className="container flex items-center justify-between">
+    <header className="relative">
+      <div className="container flex items-center justify-between px-8 py-4">
         <h2 className="text-coklat-1 text-2xl font-bold">Logo v2</h2>
         <button className="text-2xl md:hidden" onClick={() => setOpen(!open)}>
           <i>
@@ -43,10 +43,10 @@ export default function Navbar() {
           </li>
           <li>
             <NavbarMenu
-              active={pathname == "/projects"}
-              onClick={() => router.push("/projects")}
+              active={pathname == "/experience"}
+              onClick={() => router.push("/experience")}
             >
-              Projects
+              Experience
             </NavbarMenu>
           </li>
           <li>
