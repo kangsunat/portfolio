@@ -17,7 +17,7 @@ export default function Project() {
         </small>
       </section>
 
-      <section>
+      <section className="p-8">
         <ul className="mb-5 flex items-center justify-center gap-3 text-sm font-semibold text-coklat-1">
           <li>Category</li>
           <li>Category</li>

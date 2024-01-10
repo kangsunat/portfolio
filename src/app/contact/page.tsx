@@ -11,11 +11,9 @@ export default function Contact() {
         style={{ backgroundImage: "url(https://picsum.photos/200)" }}
       >
         <div className="z-50 text-white">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci a
-            laborum corporis inventore saepe, officia fugiat eos voluptatum
-            similique illo, deleniti vero deserunt nihil qui? Commodi doloribus
-            error qui perferendis.
+          <p className="text-center">
+            Like a tree that grows with strong roots, the relationship with you
+            is our foundation. Contact us with questions or feedback.
           </p>
         </div>
       </section>
@@ -58,12 +56,12 @@ export default function Contact() {
 
             <input
               type="email"
-              className="placeholder:text-coklat-2 text-coklat-1 w-full rounded-lg border border-[#dda15e] bg-transparent focus:border-[#bc6c25] focus:ring-0"
+              className="w-full rounded-lg border border-[#dda15e] bg-transparent text-coklat-1 placeholder:text-coklat-2 focus:border-[#bc6c25] focus:ring-0"
               placeholder="Fullname"
             />
             <input
               type="email"
-              className="placeholder:text-coklat-2 text-coklat-1 w-full rounded-lg border border-[#dda15e] bg-transparent focus:border-[#bc6c25] focus:ring-0"
+              className="w-full rounded-lg border border-[#dda15e] bg-transparent text-coklat-1 placeholder:text-coklat-2 focus:border-[#bc6c25] focus:ring-0"
               placeholder="Email address"
             />
             <textarea
@@ -72,7 +70,7 @@ export default function Contact() {
               cols={30}
               rows={5}
               placeholder="Type your nessage"
-              className="placeholder:text-coklat-2 text-coklat-1 w-full rounded-lg border border-[#dda15e] bg-transparent focus:border-[#bc6c25] focus:ring-0"
+              className="w-full rounded-lg border border-[#dda15e] bg-transparent text-coklat-1 placeholder:text-coklat-2 focus:border-[#bc6c25] focus:ring-0"
             ></textarea>
             <button>Submit</button>
           </form>
