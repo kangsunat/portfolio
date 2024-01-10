@@ -1,28 +1,120 @@
 import React from "react";
+import { fakerID_ID as faker } from "@faker-js/faker";
 
 export default function Project() {
   return (
     <main className="container space-y-20 ">
       {/* header */}
       <section
-        className="flex flex-col gap-4 bg-cover bg-no-repeat p-8"
+        className="flex flex-col gap-4 bg-cover bg-no-repeat p-8 text-white"
         style={{ backgroundImage: "url(https://picsum.photos/200)" }}
       >
-        <small className="text-coklat-1 font-semibold">Experience</small>
-        <h2 className="text-army-1 text-4xl font-semibold">
-          Creating Stunning Websites
-        </h2>
-        <small className="text-army-2">
+        <small className="font-semibold text-coklat-1">Experience</small>
+        <h2 className="text-4xl font-semibold">Creating Stunning Websites</h2>
+        <small className="">
           Ahmad Nasirin is a professional web developer specializing in creating
           visually appealing and functional websites.
         </small>
-        <div className="flex items-center gap-3">
-          <button>Portfolio</button>
-          <button>Contact</button>
-        </div>
       </section>
 
-      <section>show all portfolio</section>
+      <section>
+        <ul className="mb-5 flex items-center justify-center gap-3 text-sm font-semibold text-coklat-1">
+          <li>Category</li>
+          <li>Category</li>
+          <li>Category</li>
+          <li>Category</li>
+          <li>Category</li>
+          <li>Category</li>
+          <li>Category</li>
+          <li>Category</li>
+        </ul>
+        <div className="columns-4">
+          <picture>
+            <img
+              src={faker.image.urlLoremFlickr()}
+              alt=""
+              className="rounded-lg py-3"
+            />
+          </picture>
+          <picture>
+            <img
+              src={faker.image.urlLoremFlickr()}
+              alt=""
+              className="rounded-lg py-3"
+            />
+          </picture>
+          <picture>
+            <img
+              src={faker.image.urlLoremFlickr()}
+              alt=""
+              className="rounded-lg py-3"
+            />
+          </picture>
+          <picture>
+            <img
+              src={faker.image.urlLoremFlickr()}
+              alt=""
+              className="rounded-lg py-3"
+            />
+          </picture>
+          <picture>
+            <img
+              src={faker.image.urlLoremFlickr()}
+              alt=""
+              className="rounded-lg py-3"
+            />
+          </picture>
+          <picture>
+            <img
+              src={faker.image.urlLoremFlickr()}
+              alt=""
+              className="rounded-lg py-3"
+            />
+          </picture>
+          <picture>
+            <img
+              src={faker.image.urlLoremFlickr()}
+              alt=""
+              className="rounded-lg py-3"
+            />
+          </picture>
+          <picture>
+            <img
+              src={faker.image.urlLoremFlickr()}
+              alt=""
+              className="rounded-lg py-3"
+            />
+          </picture>
+          <picture>
+            <img
+              src={faker.image.urlLoremFlickr()}
+              alt=""
+              className="rounded-lg py-3"
+            />
+          </picture>
+          <picture>
+            <img
+              src={faker.image.urlLoremFlickr()}
+              alt=""
+              className="rounded-lg py-3"
+            />
+          </picture>
+          <picture>
+            <img
+              src={faker.image.urlLoremFlickr()}
+              alt=""
+              className="rounded-lg py-3"
+            />
+          </picture>
+          <picture>
+            <img
+              src={faker.image.urlLoremFlickr()}
+              alt=""
+              className="rounded-lg py-3"
+            />
+          </picture>
+        </div>
+      </section>
     </main>
   );
 }
