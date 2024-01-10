@@ -41,7 +41,7 @@ export default function HeroHeaderSwiper({ slide }: HeroHeaderSwiper) {
       </div>
       <div className="flex flex-col justify-between gap-4 p-4">
         <div>
-          <p className="text-army-1 font-semibold">{slide[slideIndex].name}</p>
+          <p className="font-semibold text-army-1">{slide[slideIndex].name}</p>
           <small className="text-army-2">{slide[slideIndex].description}</small>
         </div>
         <div className="flex items-center justify-between">
@@ -49,7 +49,7 @@ export default function HeroHeaderSwiper({ slide }: HeroHeaderSwiper) {
             {slide.map((v, i) => (
               <div
                 className={cn(
-                  "rounded-full bg-neutral-600 p-1",
+                  "rounded-full p-1",
                   slideIndex == i ? "bg-coklat-1" : "bg-coklat-2",
                 )}
                 key={i}
@@ -58,7 +58,7 @@ export default function HeroHeaderSwiper({ slide }: HeroHeaderSwiper) {
           </div>
           <div className="space-x-3">
             <button
-              className="text-coklat-1 rounded-full border border-[#bc6c25] p-1"
+              className="rounded-full border border-[#bc6c25] p-1 text-coklat-1"
               onClick={() => core?.slidePrev()}
             >
               <i>
@@ -66,7 +66,7 @@ export default function HeroHeaderSwiper({ slide }: HeroHeaderSwiper) {
               </i>
             </button>
             <button
-              className="text-coklat-1 rounded-full border border-[#bc6c25] p-1"
+              className="rounded-full border border-[#bc6c25] p-1 text-coklat-1"
               onClick={() => core?.slideNext()}
             >
               <i>
