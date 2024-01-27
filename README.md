@@ -10,7 +10,7 @@
 👨‍💻 Bahasa Pemrograman Favorit Saya:<br/>
 💻 javascript <br/>
 💻 php <br/>
-💻 python (comming soon)<br/>
+💻 python (coming soon)<br/>
 
 🛠️ Alat dan Teknologi yang Sering Saya Gunakan:<br/>
 🧰 nextjs <br/>
