@@ -10,13 +10,11 @@ export default function HeroLeft() {
     <div className="flex flex-col justify-between gap-3 md:justify-normal md:gap-0 md:self-center">
       <div className="space-y-4 md:space-y-8">
         {/* name */}
-        <h2 className="text-2xl uppercase md:text-7xl">
-          {fake.person.fullName()}
-        </h2>
+        <h2 className="text-2xl uppercase md:text-7xl">Ahmad Nasirin</h2>
 
         {/* position and technology */}
         <div className="space-y-3">
-          <p className="text-xl md:text-4xl">{fake.person.jobType()}</p>
+          <p className="text-xl md:text-4xl">Website Developer</p>
           <div className="dm:gap-4 flex items-center gap-2">
             <i className="text-lg text-yellow-500">
               <IoLogoJavascript />
