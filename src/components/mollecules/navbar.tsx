@@ -53,9 +53,9 @@ export default function Navbar() {
             <li>
               <Link href={"/portfolio"}>Portfolio</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href={"/blog"}>Blog</Link>
-            </li>
+            </li> */}
             <li className="flex justify-center">
               <Link href={"/https://github.com/kangsunat"}>
                 <i className="text-2xl">
