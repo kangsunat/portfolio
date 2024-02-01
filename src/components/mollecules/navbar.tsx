@@ -17,7 +17,7 @@ export default function Navbar() {
         <NavBtn href="/" label="Home" />
         <NavBtn href="/#about" label="About" />
         <NavBtn href="/portfolio" label="Portfolio" />
-        <NavBtn href="/blog" label="Blog" />
+        {/* <NavBtn href="/blog" label="Blog" /> */}
         <NavBtn
           noHover
           href="https://github.com/kangsunat"
