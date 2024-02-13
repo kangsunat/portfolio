@@ -11,9 +11,12 @@ export default function HeroLeft() {
         </h2>
         <p className="text-xl md:text-4xl">Website Developer</p>
       </div>
-      <i className="mt-8 animate-bounce pl-[20%] text-center text-2xl">
-        <MdKeyboardDoubleArrowDown />
-      </i>
+      <div className="mt-40 flex flex-col items-center gap-4">
+        <small className="text-primary-200 font-light">scroll down</small>
+        <i className="text-primary-200 border-primary-200 mx-auto  animate-bounce rounded-full border p-2 text-center text-2xl">
+          <MdKeyboardDoubleArrowDown />
+        </i>
+      </div>
     </div>
   );
 }

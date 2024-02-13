@@ -27,7 +27,7 @@ export default function SectionTitle({
         className={cn(
           "w-fit border-b border-dashed text-2xl font-semibold md:text-4xl",
           {
-            "border-rose-500 text-rose-500": color == "rose",
+            "border-accent-500 text-accent-500": color == "rose",
             "border-white text-white": color == "white",
           },
         )}
@@ -39,7 +39,7 @@ export default function SectionTitle({
           "w-full text-xs font-light md:w-[50%] md:text-base md:font-extralight",
           !quote && "hidden",
           {
-            "text-rose-500 ": quoteColor == "rose",
+            "text-accent-500 ": quoteColor == "rose",
             "text-white ": quoteColor == "white",
           },
         )}

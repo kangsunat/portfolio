@@ -1,12 +1,12 @@
 import React from "react";
-import { fakerID_ID as faker } from "@faker-js/faker";
 import SectionTitle from "@/components/atoms/section-title";
+import Image from "next/image";
 
 export default function About() {
   return (
     <section
       id="about"
-      className="grid place-items-center gap-8 bg-black px-4 py-10 md:grid-cols-2"
+      className="from-primary-200 via-secondary-200 to-accent-200 text-main-50 grid place-items-center gap-8 bg-gradient-to-br px-4 py-10 md:grid-cols-2 "
     >
       <div className="space-y-10 ">
         <SectionTitle
@@ -26,13 +26,13 @@ export default function About() {
         </p>
       </div>
       <div className="place-self-center">
-        <picture>
-          <img
-            src={faker.internet.avatar()}
-            alt=""
-            className="aspect-square h-[30vh] w-auto rounded-lg md:h-[50vh] md:rounded-xl"
-          />
-        </picture>
+        <Image
+          alt="passfoto"
+          src={"/pas-foto.jpg"}
+          width={1000}
+          height={1000}
+          className="h-[400px] object-contain"
+        />
       </div>
     </section>
   );
