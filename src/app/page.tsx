@@ -1,3 +1,4 @@
+import WA from "@/components/atoms/button/wa";
 import About from "@/components/organisms/sections/about";
 import Companies from "@/components/organisms/sections/companies";
 import Contact from "@/components/organisms/sections/contact";
@@ -8,14 +9,15 @@ import Testimonial from "@/components/organisms/sections/testimonial";
 
 export default function Home() {
   return (
-    <main className="space-y-10 md:space-y-20">
+    <main className="relative space-y-10 md:space-y-20">
       <Hero />
       <About />
       <Experience />
       {/* <Portfolio />
       <Companies />
       <Testimonial /> */}
-      <Contact />
+      {/* <Contact /> */}
+      <WA />
     </main>
   );
 }

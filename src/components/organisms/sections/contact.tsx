@@ -9,7 +9,10 @@ export default function Contact() {
         title={`Let's Talk`}
         quote="Connect with us: where inquiries meet solutions, and conversations spark possibilities."
       />
-      <ContactForm />
+      {/* <ContactForm /> */}
+      <button className="mb-10 rounded-full bg-rose-500 py-2 active:bg-rose-600">
+        Send
+      </button>
     </section>
   );
 }
