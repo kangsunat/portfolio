@@ -19,6 +19,7 @@ const inter = Poppins({
 export const metadata: Metadata = {
   title: "Ahmad Nasirin",
   description: "ahmad nasirin portofolio",
+  icons: "/logo.png",
 };
 
 export default function RootLayout({
