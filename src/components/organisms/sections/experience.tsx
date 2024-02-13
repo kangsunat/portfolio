@@ -36,12 +36,12 @@ export default function Experience() {
         <Link
           href={"https://www.linkedin.com/in/ahmad-nasirin-b8720711a/"}
           target="_blank"
-          className="flex items-center gap-2 rounded-full border bg-white px-2 py-1 shadow transition-all duration-300 hover:shadow-white"
+          className="bg-primary-500 hover:shadow-primary-300 dark:bg-accent-500 flex items-center gap-2 rounded-full px-2 py-1 shadow transition-all duration-300"
         >
-          <i className="text-blue-500 md:text-2xl">
+          <i className="text-white md:text-2xl">
             <FaLinkedin />
           </i>
-          <p className="text-sm text-black md:text-base">More details...</p>
+          <p className="text-sm text-white md:text-base">More details...</p>
         </Link>
       </div>
     </section>

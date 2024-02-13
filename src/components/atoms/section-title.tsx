@@ -6,13 +6,13 @@ export default function SectionTitle({
   quote,
   position = "center",
   color = "rose",
-  quoteColor = "white",
+  quoteColor = "dark",
 }: {
   title: string;
   quote?: string;
   position?: "center" | "left" | "right";
   color?: "white" | "rose";
-  quoteColor?: "white" | "rose";
+  quoteColor?: "white" | "rose" | "dark";
 }) {
   return (
     <div
@@ -40,7 +40,8 @@ export default function SectionTitle({
           !quote && "hidden",
           {
             "text-accent-500 ": quoteColor == "rose",
-            "text-white ": quoteColor == "white",
+            "text-white": quoteColor == "white",
+            "text-main-950 dark:text-main-50": quoteColor == "dark",
           },
         )}
       >

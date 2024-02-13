@@ -12,9 +12,9 @@ export default function Navbar() {
   return (
     <header className="container z-10 flex items-center justify-between bg-inherit p-4 py-3 md:p-8 ">
       <ul className="hidden items-center gap-3 md:flex">
-        <NavBtn href="/" label="Home" />
+        {/* <NavBtn href="/" label="Home" />
         <NavBtn href="/#about" label="About" />
-        <NavBtn href="/portfolio" label="Portfolio" />
+        <NavBtn href="/portfolio" label="Portfolio" /> */}
         {/* <NavBtn href="/blog" label="Blog" /> */}
       </ul>
       <div className="flex items-center gap-4">

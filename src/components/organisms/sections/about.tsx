@@ -6,14 +6,22 @@ export default function About() {
   return (
     <section
       id="about"
-      className="from-primary-200 via-secondary-200 to-accent-200 text-main-50 grid place-items-center gap-8 bg-gradient-to-br px-4 py-10 md:grid-cols-2 "
+      className="text-main-950 dark:text-main-50 grid place-items-center gap-8 bg-gradient-to-br px-4 md:grid-cols-2 "
     >
-      <div className="space-y-10 ">
+      <div className="place-self-center">
+        <Image
+          alt="passfoto"
+          src={"/about-2.jpg"}
+          width={1000}
+          height={1000}
+          className="aspect-video h-[400px] rounded-lg"
+        />
+      </div>
+      <div className="space-y-10">
         <SectionTitle
           color="rose"
           title="About"
           quote="Creative, passionate, and committed to personal and professional growth"
-          position="right"
         />
 
         <p className="text-center text-sm md:text-base">
@@ -24,15 +32,6 @@ export default function About() {
           designing application architectures, including REST APIs,
           microservices, and monolytic. Thanks!
         </p>
-      </div>
-      <div className="place-self-center">
-        <Image
-          alt="passfoto"
-          src={"/pas-foto.jpg"}
-          width={1000}
-          height={1000}
-          className="h-[400px] object-contain"
-        />
       </div>
     </section>
   );

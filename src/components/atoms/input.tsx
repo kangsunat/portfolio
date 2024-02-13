@@ -17,7 +17,7 @@ export default function InputFormik({
       <input
         {...field}
         placeholder={placeholder}
-        className="w-full rounded-full border-white bg-transparent text-white focus:border-2 focus:border-white focus:outline-none focus:ring-0"
+        className="border-main-500 text-main-950 focus:border-main-700 dark:text-main-50 dark:border-main-200 dark:focus:border-main-100 w-full rounded-full bg-transparent focus:border-2 focus:outline-none focus:ring-0"
       />
     </div>
   );
