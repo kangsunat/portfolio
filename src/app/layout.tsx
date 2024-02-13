@@ -9,6 +9,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import Navbar from "@/components/mollecules/navbar";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import NextThemeProvider from "@/providers/next-theme";
 
 const inter = Poppins({
   weight: ["700", "400", "300", "100"],
@@ -28,8 +29,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
-        <Navbar />
-        {children}
+        <NextThemeProvider>
+          <Navbar />
+          {children}
+        </NextThemeProvider>
         <SpeedInsights />
       </body>
     </html>
