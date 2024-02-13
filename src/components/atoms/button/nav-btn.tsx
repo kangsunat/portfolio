@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { ReactNode } from "react";
 import cn from "classnames";
-import { usePathname, useParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 type tNavbtn = {
   label: ReactNode;
@@ -19,8 +19,9 @@ export default function NavBtn({ label, href, target, noHover }: tNavbtn) {
     <li
       className={cn(
         "text-lg transition-all duration-500 ease-in-out active:scale-95",
-        !noHover && "cursor-pointer rounded-full px-2 hover:text-cyan-500 ",
-        router == href && "font-semibold text-cyan-500",
+        !noHover &&
+          "hover:text-primary-200 dark:hover:text-accent-200 cursor-pointer rounded-full px-2 ",
+        router == href && "text-primary-500 dark:text-accent-500 font-semibold",
       )}
     >
       <Link href={href} target={target}>

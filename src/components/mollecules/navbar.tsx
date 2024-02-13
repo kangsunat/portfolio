@@ -16,18 +16,15 @@ export default function Navbar() {
         <NavBtn href="/#about" label="About" />
         <NavBtn href="/portfolio" label="Portfolio" />
         {/* <NavBtn href="/blog" label="Blog" /> */}
-        <NavBtn
-          noHover
-          href="https://github.com/kangsunat"
-          target="_blank"
-          label={
-            <i className="text-2xl">
-              <FaGithub />
-            </i>
-          }
-        />
       </ul>
-      <ThemeSwitcher />
+      <div className="flex items-center gap-4">
+        <ThemeSwitcher />
+        <Link href="https://github.com/kangsunat" target="_blank">
+          <i className="text-2xl">
+            <FaGithub />
+          </i>
+        </Link>
+      </div>
       <button data-tooltip-id="btn-menu" className="block text-xl md:hidden">
         <i>
           <IoMenu />
