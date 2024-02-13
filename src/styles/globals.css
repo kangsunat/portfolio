@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-  @apply bg-main-50 text-main-950;
+  @apply bg-main-50 dark:bg-main-950 text-main-950 dark:text-main-50;
 }

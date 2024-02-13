@@ -10,15 +10,16 @@ export default function ThemeSwitcher() {
   console.log("needs ", theme);
 
   return (
-    <div className="bg-primary-500 dark:bg-accent-500 group rounded-full px-3 py-1 text-white">
-      <div className="flex items-center justify-between gap-3 transition-all duration-300">
-        <i className="" onClick={() => setTheme("dark")}>
-          <IoMoon />
-        </i>
-        <i className="" onClick={() => setTheme("light")}>
-          <IoSunny />
-        </i>
-      </div>
+    <div className="bg-primary-500 dark:bg-accent-500 group flex items-center justify-between gap-3 rounded-full px-3 py-1 text-white transition-all duration-300">
+      <i
+        className="text-primary-400 dark:text-main-50"
+        onClick={() => setTheme("dark")}
+      >
+        <IoMoon />
+      </i>
+      <i className="dark:text-accent-300" onClick={() => setTheme("light")}>
+        <IoSunny />
+      </i>
     </div>
   );
 }
