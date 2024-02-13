@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="text-main-950 dark:text-main-50 grid place-items-center gap-8 bg-gradient-to-br px-4 md:grid-cols-2 "
+      className="text-main-950 dark:text-main-50 grid grid-cols-1 place-items-center gap-8 px-4 lg:grid-cols-2 "
     >
       <div className="place-self-center">
         <Image
@@ -14,7 +14,7 @@ export default function About() {
           src={"/about-2.jpg"}
           width={1000}
           height={1000}
-          className="aspect-video h-[400px] rounded-lg"
+          className="aspect-video h-[180px] rounded-lg md:h-[400px]"
         />
       </div>
       <div className="space-y-10">

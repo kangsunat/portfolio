@@ -11,7 +11,7 @@ export default function HeroLeft() {
         </h2>
         <p className="text-xl md:text-4xl">Website Developer</p>
       </div>
-      <div className="mt-40 flex flex-col items-center gap-4">
+      <div className="mt-8 hidden flex-col items-center gap-4 lg:mt-40 lg:flex">
         <small className="text-primary-200 font-light">scroll down</small>
         <i className="text-primary-200 border-primary-200 mx-auto  animate-bounce rounded-full border p-2 text-center text-2xl">
           <MdKeyboardDoubleArrowDown />
