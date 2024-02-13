@@ -6,6 +6,7 @@ import NavBtn from "../atoms/button/nav-btn";
 import { IoMenu } from "react-icons/io5";
 import { Tooltip } from "react-tooltip";
 import Link from "next/link";
+import ThemeSwitcher from "../atoms/theme-switcher";
 
 export default function Navbar() {
   return (
@@ -26,6 +27,7 @@ export default function Navbar() {
           }
         />
       </ul>
+      <ThemeSwitcher />
       <button data-tooltip-id="btn-menu" className="block text-xl md:hidden">
         <i>
           <IoMenu />

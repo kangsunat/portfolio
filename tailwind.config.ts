@@ -5,6 +5,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: "class",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -21,19 +22,6 @@ const config: Config = {
         center: true,
       },
       colors: {
-        text: {
-          50: "#f2e8fd",
-          100: "#e5d0fb",
-          200: "#cca2f6",
-          300: "#b273f2",
-          400: "#9944ee",
-          500: "#7f16e9",
-          600: "#6611bb",
-          700: "#4c0d8c",
-          800: "#33095d",
-          900: "#19042f",
-          950: "#0d0217",
-        },
         main: {
           50: "#f0e5ff",
           100: "#e0ccff",
